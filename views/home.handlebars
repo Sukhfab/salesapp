@@ -1,0 +1,104 @@
+ {{!-- <div>
+    this is the body
+</div>
+
+<ul>
+    <li><a href="/home">home</a></li>
+    <li><a href="/profile">profile</a></li>
+    <li><a href="/email">Email</a></li>
+    
+</ul>
+<form action="/form" method="POST">
+<label for="name">Enter name</label>
+<input type="text" name="name" id="name">
+<button type="submit"></button>
+</form> --}}
+
+
+<div class="container shadow p-3 mb-5 bg-body rounded" >
+    <div class="row nav-fill" style="margin: 20px;">
+  
+ <a href="#" class="col-md-2" >step1 link</a>
+<a href="#" class="col-md-2">step2 link</a>
+<a href="#" class="col-md-2">step3 link</a>
+<a href="#" class="col-md-2">step4 link</a>
+<button style="margin-left:90px" type="button"  class="btn btn-primary col-md-2">Mark as complete</button>
+
+    
+   </div>
+    <div class="row">
+    <div id="field1" class="col-md-6">
+<b>Key fields</b>
+<p>company <span>hello</span> </p>  <hr>
+<p>company <span>hello</span></p> <hr>
+<p>company <span>hello</span></p> <hr>
+<p>company <span>hello</span></p> <hr>
+    </div>
+    
+    <div id="field2" class="col-md-6">
+<b>Guidance for Success</b>
+<div>
+    <div>
+        Determine which leads are qualified or unqualified.
+    </div>
+    <div>
+        <ul>
+            <li>Assign the lead to a representative
+</li>
+            <li>Gather key details on the lead from their company's website
+</li>
+            <li>Create a plan to build a connection with this lead
+</li>
+        </ul>
+    </div>
+</div>
+    </div>
+    </div>
+</div>
+
+<style>
+    p{
+        font-size: small;
+    }
+    hr { display: block;  margin: 0 auto; margin-top: 0px; margin-bottom: 0px; margin: 0 auto; margin-top: 0px; margin-bottom: 0px; border-style: inset; border-width: 1px;}
+
+
+#yo{
+    {{!-- background-color: red; --}}
+    padding: 7px;
+}
+a{
+    background-color: black;
+    margin: 1px;
+    color: white;
+    text-decoration: none;
+    padding: 5px 4px;
+    border-radius: 10px;
+}
+a:focus{
+    background-color: green;
+    
+    
+}
+a:focus :nth-child(2){
+    color: red;
+    background-color: yellow;
+}
+a:hover{
+    color: whitesmoke;
+  opacity: 0.8;
+  transition-duration: 0.2s;
+}
+.container{
+    margin-top: 20px;
+    padding: 10px;
+    border-style: hidden;
+    color: black;
+    background-color: rgb(238, 228, 228);
+    outline: none;
+}
+span{
+    margin-left: 30px;
+}
+}
+</style>
