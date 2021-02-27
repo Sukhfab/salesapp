@@ -10,12 +10,13 @@ app.set('view engine', 'handlebars');
 app.use(bodyParser.urlencoded({
     extended: false
 }))
-app.get('/one', function (req, res) {
-    res.render('one');
-});
 app.get('/', function (req, res) {
     res.render('one');
 });
+app.get('/one', function (req, res) {
+    res.render('one');
+});
+
 app.get('/two', function (req, res) {
     res.render('two');
 });
