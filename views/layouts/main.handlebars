@@ -28,9 +28,9 @@
 
 <div class="container shadow p-3 mb-5 bg-body rounded" >
     <div class="row nav-fill" style="margin: 20px;">
-  
- <a href="/one" class="col-md-2" >step1 link</a>
-<a href="/two" class="col-md-2">step2 link</a>
+  {{!-- <button onclick="func()"></button> --}}
+ <a href="/one" class="col-md-2"  >step1 link</a>
+<a href="/two" class="col-md-2" >step2 link</a>
 <a href="/three" class="col-md-2">step3 link</a>
 <a href="/four" class="col-md-2">step4   link</a>
 <button style="margin-left:90px" type="button"  class="btn btn-primary col-md-2">Mark as complete</button>
@@ -87,10 +87,10 @@ a:focus{
     
     
 }
-a:focus :nth-child(2){
-    color: red;
-    background-color: yellow;
+.active{
+    background-color: green;
 }
+
 a:hover{
     color: whitesmoke;
   opacity: 0.8;
@@ -108,8 +108,17 @@ span{
     margin-left: 30px;
 }
 }
+
 </style>
 
  
 </body>
 </html>
+
+<script>
+for (var i = 0; i < document.links.length; i++) {
+    if (document.links[i].href == document.URL) {
+        document.links[i].className = 'active col-md-2';
+    }
+}
+</script>
